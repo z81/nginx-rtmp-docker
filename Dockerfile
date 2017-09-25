@@ -56,6 +56,7 @@ RUN apk add --virtual .build-dependencies \
     && mkdir /tmp/hls \ 
     && chmod 777 /tmp/hls
 
+
 # Forward logs to Docker
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
